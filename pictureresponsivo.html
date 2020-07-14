@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Picture Responsivo</title>
+</head>
+<body>
+    <h1>Picture Responsivo</h1>
+
+    <picture>
+        <source media="(min-width: 480px)" sizes="33vw" srcset="imagens/1280.jpg 1280w, imagens/960.jpg 960w, imagens/480.jpg 480w" >
+        <source sizes="100vw" media="imagens/822_mob.jpg 822w,imagens/640_mob.jpg 640w,imagens/320_mob.jpg 320w">            
+        <img src="imagens/1280.jpg" alt="fallback">   
+    </picture>
+
+    <p>Caso Tela maior que 480px, então tentará primeiro exibir a imagem de 1280, senão 960, e segue ordem acima. Sendo todas 33%, neste caso.</p>
+    <p>Se tela menor que 480px, exibi-se imagens com final "_mob", na ordem acima, em 100% da tela.</p>
+    <p>Caso for navegador antigo então usa-se a tag final "img".</p>
+</body>
+</html>
