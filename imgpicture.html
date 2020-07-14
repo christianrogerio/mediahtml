@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tag HTML IMG e Picture</title>
+</head>
+<body>
+    <h1>Tag HTML IMG</h1>
+
+    <img
+    src="http://lorempixel.com/400/200/nature/"
+    srcset="http://lorempixel.com/400/200/nature/ 400w,http://lorempixel.com/800/400/nature/ 800w"
+    alt="Imagem natureza"
+    sizes="50.33vw"
+    >
+    
+    <br>
+
+    <img
+    src="http://lorempixel.com/400/200/city/"
+    srcset="http://lorempixel.com/400/200/city/ 400w,http://lorempixel.com/800/400/city/ 800w"
+    alt="Imagem natureza"
+    sizes="(min-width: 500px) 33.33vw, 100vw"
+    >
+
+    <hr>
+    <h1>Tag HTML Picture</h1>
+
+    <picture>
+        <source media="(min-width: 480px)" sizes="33vw"
+        srcset="http://lorempixel.com/1280/600/city/ 1280w, http://lorempixel.com/960/400/city/ 960w,http://lorempixel.com/480/300/city/ 480w,"
+        />
+        <source sizes="100vw"
+        srcset="http://lorempixel.com/822/600/city/ 822w, http://lorempixel.com/640/400/city/ 640w,http://lorempixel.com/320/300/city/ 320w,"
+        />
+        <img src="http://lorempixel.com/960/400/city/" alt="fallback para navegadores antigos"/>
+    </picture>
+
+</body>
+</html>
